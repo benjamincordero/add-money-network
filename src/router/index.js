@@ -4,17 +4,18 @@ import Add from "../views/Add.vue";
 import Edit from "../views/Edit.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
-import Dashboard from "../views/Dashboard.vue";
+//import Dashboard from "../views/Dashboard.vue";
 import store from "../store";
 const routes = [
-  {
+  /*  {
     path: "/",
     name: "Dashboard",
     component: Dashboard,
     meta: { requiresAuth: true },
   },
+  */
   {
-    path: "/list",
+    path: "/",
     name: "List",
     component: List,
     meta: { requiresAuth: true },

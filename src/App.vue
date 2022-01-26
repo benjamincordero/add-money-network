@@ -34,7 +34,7 @@
         <div class="items-center md:flex">
           <div class="flex flex-col md:flex-row md:mx-6" :class="[isOpen ? 'block' : 'hidden', hidden]">
             <router-link
-              to="/list"
+              to="/"
               class="my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
               >Payments</router-link
             >
