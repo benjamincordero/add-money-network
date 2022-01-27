@@ -36,8 +36,8 @@
         />
       </div>
       <div class="flex justify-end">
-        <button
-          type="submit"
+        <button @click="login"
+          type="button"
           class="inline-flex items-center px-4 py-2 text-white bg-blue-500 rounded-xl hover:bg-blue-600"
         >
           Login
@@ -64,6 +64,7 @@ export default {
   methods: {
     ...mapActions(["LogIn"]),
     async login() {
+      console.log('login')
       try {
         const auth = getAuth();
         const userCredential = await signInWithEmailAndPassword(
@@ -75,7 +76,7 @@ export default {
         await this.LogIn({ email: this.email, password: this.password });
         this.show_error = false;
         this.$router.push("/");
-        console.log(user);
+        user;
       } catch (error) {
         const errorCode = error.code;
         const errorMessage = error.message;
